@@ -5,8 +5,8 @@ public class calculator extends Frame implements ActionListener, WindowListener
 {
     static calculator frm = new calculator();
     static Panel pnl = new Panel(new GridLayout(6, 4, 2, 2));
-    static Label lab1 = new Label("",Label.RIGHT);
-    static Label lab2 = new Label("0",Label.RIGHT);
+    static Label lab1 = new Label("", Label.RIGHT);
+    static Label lab2 = new Label("0", Label.RIGHT);
     static Button btnpc = new Button("%");
     static Button btnce = new Button("CE");
     static Button btnc = new Button("C");
