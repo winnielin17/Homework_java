@@ -4,7 +4,7 @@ import java.awt.event.*;
 public class calculator extends Frame implements ActionListener, WindowListener
 {
     static calculator frm = new calculator();
-    static Panel pnl = new Panel(new GridLayout(6,4,2,2));
+    static Panel pnl = new Panel(new GridLayout(6, 4, 2, 2));
     static Label lab1 = new Label("",Label.RIGHT);
     static Label lab2 = new Label("0",Label.RIGHT);
     static Button btnpc = new Button("%");
@@ -74,39 +74,39 @@ public class calculator extends Frame implements ActionListener, WindowListener
 
         frm.setLayout(null);
         frm.setTitle("小算盤");
-        frm.setSize(500,550);
-        frm.setLocation(100,50);
+        frm.setSize(500, 550);
+        frm.setLocation(100, 50);
         frm.setResizable(false);
-        lab1.setBounds(0,60,480,30);
+        lab1.setBounds(0, 60, 480, 30);
         lab1.setForeground(Color.gray);
-        lab1.setFont(new Font("Arial",Font.PLAIN,16));
-        lab2.setBounds(0,90,480,30);
-        lab2.setFont(new Font("Arial",Font.BOLD,30));
-        pnl.setBounds(10,140,480,400);
-        btnpc.setFont(new Font("Arial",Font.PLAIN,18));
-        btnce.setFont(new Font("Arial",Font.PLAIN,18));
-        btnc.setFont(new Font("Arial",Font.PLAIN,18));
-        btnbc.setFont(new Font("Arial",Font.PLAIN,20));
-        btnre.setFont(new Font("Arial",Font.PLAIN,18));
-        btnsq.setFont(new Font("Arial",Font.PLAIN,18));
-        btnsqrt.setFont(new Font("Arial",Font.PLAIN,18));
-        btndi.setFont(new Font("Arial",Font.PLAIN,18));
-        btn7.setFont(new Font("Arial",Font.BOLD,20));
-        btn8.setFont(new Font("Arial",Font.BOLD,20));
-        btn9.setFont(new Font("Arial",Font.BOLD,20));
-        btnmu.setFont(new Font("Arial",Font.PLAIN,20));
-        btn4.setFont(new Font("Arial",Font.BOLD,20));
-        btn5.setFont(new Font("Arial",Font.BOLD,20));
-        btn6.setFont(new Font("Arial",Font.BOLD,20));
-        btnmi.setFont(new Font("Arial",Font.PLAIN,20));
-        btn1.setFont(new Font("Arial",Font.BOLD,20));
-        btn2.setFont(new Font("Arial",Font.BOLD,20));
-        btn3.setFont(new Font("Arial",Font.BOLD,20));
-        btnpl.setFont(new Font("Arial",Font.PLAIN,20));
-        btnplmi.setFont(new Font("Arial",Font.PLAIN,20));
-        btn0.setFont(new Font("Arial",Font.BOLD,20));
-        btndot.setFont(new Font("Arial",Font.BOLD,20));
-        btneq.setFont(new Font("Arial",Font.PLAIN,20));
+        lab1.setFont(new Font("Arial", Font.PLAIN, 16));
+        lab2.setBounds(0, 90, 480, 30);
+        lab2.setFont(new Font("Arial", Font.BOLD, 30));
+        pnl.setBounds(10, 140, 480, 400);
+        btnpc.setFont(new Font("Arial", Font.PLAIN, 18));
+        btnce.setFont(new Font("Arial", Font.PLAIN, 18));
+        btnc.setFont(new Font("Arial", Font.PLAIN, 18));
+        btnbc.setFont(new Font("Arial", Font.PLAIN, 20));
+        btnre.setFont(new Font("Arial", Font.PLAIN, 18));
+        btnsq.setFont(new Font("Arial", Font.PLAIN, 18));
+        btnsqrt.setFont(new Font("Arial", Font.PLAIN, 18));
+        btndi.setFont(new Font("Arial", Font.PLAIN, 18));
+        btn7.setFont(new Font("Arial", Font.BOLD, 20));
+        btn8.setFont(new Font("Arial", Font.BOLD, 20));
+        btn9.setFont(new Font("Arial", Font.BOLD, 20));
+        btnmu.setFont(new Font("Arial", Font.PLAIN, 20));
+        btn4.setFont(new Font("Arial", Font.BOLD, 20));
+        btn5.setFont(new Font("Arial", Font.BOLD, 20));
+        btn6.setFont(new Font("Arial", Font.BOLD, 20));
+        btnmi.setFont(new Font("Arial", Font.PLAIN, 20));
+        btn1.setFont(new Font("Arial", Font.BOLD, 20));
+        btn2.setFont(new Font("Arial", Font.BOLD, 20));
+        btn3.setFont(new Font("Arial", Font.BOLD, 20));
+        btnpl.setFont(new Font("Arial", Font.PLAIN, 20));
+        btnplmi.setFont(new Font("Arial", Font.PLAIN, 20));
+        btn0.setFont(new Font("Arial", Font.BOLD, 20));
+        btndot.setFont(new Font("Arial", Font.BOLD, 20));
+        btneq.setFont(new Font("Arial", Font.PLAIN, 20));
         pnl.add(btnpc);
         pnl.add(btnce);
         pnl.add(btnc);
@@ -136,12 +136,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
         frm.add(pnl);
 
         dlg.setTitle("關閉視窗");
-        dlg.setSize(300,180);
-        dlg.setLocation(400,120);
-        dlg.setLayout(new FlowLayout(FlowLayout.CENTER,15,25));
-        lab3.setFont(new Font("",Font.PLAIN,20));
-        sure.setFont(new Font("",Font.PLAIN,18));
-        cancel.setFont(new Font("",Font.PLAIN,18));
+        dlg.setSize(300, 180);
+        dlg.setLocation(400, 120);
+        dlg.setLayout(new FlowLayout(FlowLayout.CENTER, 15, 25));
+        lab3.setFont(new Font("", Font.PLAIN, 20));
+        sure.setFont(new Font("", Font.PLAIN, 18));
+        cancel.setFont(new Font("", Font.PLAIN, 18));
         dlg.add(lab3);
         dlg.add(sure);
         dlg.add(cancel);
@@ -374,7 +374,7 @@ public class calculator extends Frame implements ActionListener, WindowListener
                         lab2.setText("無法除以0");
                         s1.append(s2.toString());
                         lab1.setText(s1.append(e.getActionCommand()).toString());
-                        oper=0;
+                        oper = 0;
                     }
                     else
                     {
@@ -412,7 +412,7 @@ public class calculator extends Frame implements ActionListener, WindowListener
             {
                 if(s2.length() == 0)
                 {
-                    s1.deleteCharAt(s1.length()-1);
+                    s1.deleteCharAt(s1.length() - 1);
                     lab1.setText(s1.append(e.getActionCommand()).toString());
                     oper = 3;
                 }
@@ -490,7 +490,7 @@ public class calculator extends Frame implements ActionListener, WindowListener
             {
                 if(s2.length() == 0)
                 {
-                    s1.deleteCharAt(s1.length()-1);
+                    s1.deleteCharAt(s1.length() - 1);
                     lab1.setText(s1.append(e.getActionCommand()).toString());
                     oper = 3;
                 }
@@ -795,7 +795,7 @@ public class calculator extends Frame implements ActionListener, WindowListener
         {
             num2 = -num2;
             s2.setLength(0);
-            if(lab2.getText().indexOf('.')!= -1) //已經有小數點
+            if(lab2.getText().indexOf('.') != -1) //已經有小數點
             {
                 s2.append(Double.toString(num2));
                 lab2.setText(s2.toString());
@@ -918,12 +918,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
                 int num = (int)num2;
                 if(num2 == num)
                 {
-                    s1.append("1/("+num+")");
+                    s1.append("1/(" + num + ")");
                     lab1.setText(s1.toString());
                 }
                 else
                 {
-                    s1.append("1/("+num2+")");
+                    s1.append("1/(" + num2 + ")");
                     lab1.setText(s1.toString());
                 }
                 num2 = 1 / num2;
@@ -946,12 +946,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
                 int num = (int)num2;
                 if(num2 == num)
                 {
-                    s1.append("1/("+num+")");
+                    s1.append("1/(" + num + ")");
                     lab1.setText(s1.toString());
                 }
                 else
                 {
-                    s1.append("1/("+num2+")");
+                    s1.append("1/(" + num2 + ")");
                     lab1.setText(s1.toString());
                 }
                 num2 = 1 / num2;
@@ -976,12 +976,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
                 int num = (int)num2;
                 if(num2 == num)
                 {
-                    s1.append("sqr("+num+")");
+                    s1.append("sqr("+ num +")");
                     lab1.setText(s1.toString());
                 }
                 else
                 {
-                    s1.append("sqr("+num2+")");
+                    s1.append("sqr(" + num2 + ")");
                     lab1.setText(s1.toString());
                 }
                 num2 = num2 * num2;
@@ -1004,12 +1004,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
                 int num = (int)num2;
                 if(num2 == num)
                 {
-                    s1.append("sqr("+num+")");
+                    s1.append("sqr(" + num + ")");
                     lab1.setText(s1.toString());
                 }
                 else
                 {
-                    s1.append("sqr("+num2+")");
+                    s1.append("sqr(" + num2 + ")");
                     lab1.setText(s1.toString());
                 }
                 num2 = num2 * num2;
@@ -1035,12 +1035,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
                 int num = (int)num2;
                 if(num2 == num)
                 {
-                    s1.append("√("+num+")");
+                    s1.append("√(" + num + ")");
                     lab1.setText(s1.toString());
                 }
                 else
                 {
-                    s1.append("√("+num2+")");
+                    s1.append("√(" + num2 + ")");
                     lab1.setText(s1.toString());
                 }
                 s2.setLength(0);
@@ -1052,12 +1052,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
                 int num = (int)num2;
                 if(num2 == num)
                 {
-                    s1.append("√("+num+")");
+                    s1.append("√(" + num + ")");
                     lab1.setText(s1.toString());
                 }
                 else
                 {
-                    s1.append("√("+num2+")");
+                    s1.append("√(" + num2 + ")");
                     lab1.setText(s1.toString());
                 }
                 num2 = Math.sqrt(num2);
@@ -1080,12 +1080,12 @@ public class calculator extends Frame implements ActionListener, WindowListener
                 int num = (int)num2;
                 if(num2 == num)
                 {
-                    s1.append("√("+num+")");
+                    s1.append("√(" + num + ")");
                     lab1.setText(s1.toString());
                 }
                 else
                 {
-                    s1.append("√("+num2+")");
+                    s1.append("√(" + num2 + ")");
                     lab1.setText(s1.toString());
                 }
                 num2 = Math.sqrt(num2);
